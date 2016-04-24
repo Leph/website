@@ -1,0 +1,128 @@
+
+@inproceedings{ForceSencorsHumanoidsVideo2015,
+    title={Low-Cost Force Sensors for Small Size Humanoid Robot},
+    author={Passault, Grégoire and Rouxel, Quentin and Hofer, Ludovic and N'Guyen, Steve and Ly, Olivier},
+    booktitle={Humanoid Robots (Humanoids), 2015 IEEE-RAS 15th International Conference on (Video Contribution)},
+    pages={1148-1148},
+    year={2015},
+    organization={IEEE},
+    url={https://youtu.be/_d7Phe0qois},
+    type={video},
+    abstract={
+        We present a new design of foot pressure sensors in the context of small low-cost robots. 
+        We design the robot in the context of RoboCup kid-size humanoid league (i.e. the robot size must be lower than 90 cm). 
+        A new challenge is to walk on artificial grass of 3 cm height, which essentially means a soft irregular floor. 
+        In this context, one cannot use full 6-axis force sensors for cost and mechanical integration reasons. 
+        Classically, FSR sensors are used to handle foot pressure with unclear efficiency. 
+        Instead of that, we propose to use low cost strain gauge originally designed for scales. 
+        The strain gauge is made of resistors network glued on a aluminium beam. 
+        In our design, the aluminium beams are themselves full parts of the mechanical structure of the foot. 
+        Therefore, we measure directly the deformation of the foot and thus the force applied on it in a robust way. 
+        We use this system in order to measure the position of the centre of pressure under the foot, 
+        in order to balance motor primitives of the robot: perturbation rejection, locomotion, shoot. 
+        First experiments are promising and we plan to set up a rigorous comparison with the ZMP.
+    }
+}
+
+@misc{PosterJNRR2015,
+    author={Rouxel, Quentin and Passault, Grégoire and N'Guyen, Steve and Ly, Olivier},
+    title={Learning Odometry on Small Humanoid Robot and Application to Robocup Football Game},
+    institution={Journées Nationales de la Recherche en Robotique},
+    year={2015},
+    type={poster}
+}
+
+@inproceedings{ProjectsWorkshopHumanoids2015,
+    title={Rhoban Hardware and Software Open Source Contributions for RoboCup Humanoids},
+    author={Rouxel, Quentin and Passault, Grégoire and Hofer, Ludovic and N'Guyen, Steve and Ly, Olivier},
+    booktitle={Proceedings of 10th Workshop on Humanoid Soccer Robots, IEEE-RAS Int. Conference on Humanoid Robots, Seoul, Korea},
+    year={2015},
+    abstract={
+        Three newly released hardware and software
+        open source contributions are presented.
+        The first one is a new mechanical and electronics design for low cost
+        stain gauge based foot pressure sensors.
+        The second is a lightweight user interface library dedicated to
+        robotics applications and allowing for an on
+        the fly interaction with an on board program.
+        The third one is an implementation of an open loop walk generator for
+        humanoid robots based on splines and inverse kinematics.
+    }
+}
+
+@misc{TDPRoboCup2016,
+    author={Fabre, Rémi and Gimbert, Hugo and Gondry, Loic and Hofer, Ludovic and 
+        Ly, Olivier and N'Guyen, Steve and Passault, Grégoire and Rouxel, Quentin},
+    title={Rhoban Football Club Team - Description Paper},
+    institution={Humanoid Kid-Size League, Robocup 2016 Leipzig},
+    year={2016},
+    type={Team Description Paper},
+    abstract={
+        This paper gives a short overview of the design of the Kid-size humanoid robots 
+        Sigmaban and Grosban of the French Rhoban Football Club Robocup team.
+        These robots are built to play soccer in an autonomous way. It describes the 
+        main hardware and software components in their current state, major upgrades
+        and research tracks for the upcoming Robocup 2016 competition.
+    }
+}
+
+@inproceedings{OdometryICRA2016,
+    author={Rouxel, Quentin and Passault, Gregoire and Hofer, Ludovic and N'Guyen, Steve and Ly, Olivier},
+    title={Learning the Odometry on a Small Humanoid Robot},
+    booktitle={Robotics and Automation (ICRA), 2016 IEEE International Conference on},
+    year={Accepted},
+    organization={IEEE},
+    abstract={
+        Odometry is an important element for the localization of mobile
+        robots.
+        For humanoid robots, it is very prone to
+        integration errors, due to mechanical complexity, uncertainties and foot/ground
+        contacts.
+        Most of the time, a visual odometry is then used to encompass these
+        problems.
+        In this work we propose a method to compensate for odometry drifting using machine learning
+        on a small size low-cost humanoid without vision.
+        This method is tested on different ground conditions and exhibits a
+        significant improvement in odometry accuracy.
+    }
+} 
+
+@inproceedings{MetabotICARSC2016,
+     title={Metabot: a Low-Cost Legged Robotics Platform for Education},
+     author={Passault, Grégoire and Rouxel, Quentin and Petit, François and Ly, Olivier},
+     booktitle={Autonomous Robot Systems and Competitions (ICARSC), 2016 IEEE International Conference on},
+     year={Accepted},
+     organization={IEEE},
+     abstract={
+         This paper introduces an open-source 3D printed low-cost legged
+         robot environment designed for educational purposes.  
+         The platform, called Metabot, is already operational and is
+         currently experienced by teachers and pupils. 
+         The robot as a teaching aid, has several advantages: at first, it is
+         stimulating for pupils, especially legged robots. Second, robotics
+         is multidisciplinary and centralizes a broad spectrum of knowledge
+         for the pupils; in particular, it allows to introduce programming in
+         a concrete environment, which is now an important need in
+         school. Finally, legged robots can illustrate concretely several
+         matters of geometry.
+     }
+}
+
+@unpublished{DynabanRoboCup2016,
+     title={Dynaban, an Open-Source Alternative Firmware for Dynamixel Servo-Motors},
+     author={Fabre, Rémi and Rouxel, Quentin and Passault, Grégoire and N'Guyen, Steve and Ly, Olivier},
+     booktitle={Symposium RoboCup 2016: Robot World Cup XX},
+     year={Submitted},
+     abstract={
+         In this paper, we present an alternative open-source firmware for the Dynamixel MX-64 servo-motor. 
+         We discuss software features to fully exploit the hardware capabilities of the device. 
+         In order to enhance the default controller, a friction model and an electric model of the motor are embedded into the firmware. 
+         The parameters of the model are found using a black-box optimization algorithm. 
+         A feed-forward method is proposed to follow position, speed and torque trajectories. 
+         The approach is tested with a highly dynamic kick movement on our humanoid soccer robot Sigmaban
+         whose torque trajectories computed using a classic rigid body inverse dynamics. 
+         The comparison between the default control strategy and the proposed one shows significant 
+         improvements in terms of accuracy, delay and repeatability.
+     }
+}
+
