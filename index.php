@@ -58,7 +58,7 @@ $bibtex = parseBibtex();
             <br/>
             Member of Team <a href="link.php?l=http://rhoban.com/en">Rhoban</a><br/>
             <br/>
-            <em>Last update: 04/2016</em>
+            <em>Last update: 09/2016</em>
         </div>
         <div class="col-md-3">
             <a href="link.php?l=http://www.labri.fr"><img src="media/labri.jpg" alt="labri" width="300" /></a>
