@@ -55,3 +55,17 @@ function writeLog()
         $line, FILE_APPEND | LOCK_EX);
 }
 
+/**
+ * Manage autorized external links
+ */
+$externalLinks = array(
+    'http://www.labri.fr' => true,
+    'http://www.u-bordeaux.com' => true,
+    'http://rhoban.com/en' => true,
+    'http://www.bordeaux-inp.fr' => true,
+    'https://github.com/RhobanProject/' => true,
+    'https://github.com/Rhoban/' => true,
+    'http://metabot.cc' => true,
+    'https://youtu.be/' => true,
+);
+

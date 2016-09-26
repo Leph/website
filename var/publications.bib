@@ -70,7 +70,7 @@
     author={Rouxel, Quentin and Passault, Gregoire and Hofer, Ludovic and N'Guyen, Steve and Ly, Olivier},
     title={Learning the Odometry on a Small Humanoid Robot},
     booktitle={Robotics and Automation (ICRA), 2016 IEEE International Conference on},
-    year={Accepted},
+    year={2016},
     organization={IEEE},
     abstract={
         Odometry is an important element for the localization of mobile
@@ -91,7 +91,7 @@
     title={Metabot: a Low-Cost Legged Robotics Platform for Education},
     author={Passault, Grégoire and Rouxel, Quentin and Petit, François and Ly, Olivier},
     booktitle={Autonomous Robot Systems and Competitions (ICARSC), 2016 IEEE International Conference on},
-    year={Accepted},
+    year={2016},
     organization={IEEE},
     abstract={
         This paper introduces an open-source 3D printed low-cost legged
@@ -113,7 +113,7 @@
     author={Passault, Grégoire and Rouxel, Quentin and Fabre, Remi and N'Guyen, Steve and Ly, Olivier},
     booktitle={Biomimetic and Biohybrid Systems: 5th International Conference, Living Machines 2016, 
         Edinburgh, Scotland, July 18-22, 2016, Proceedings},
-    year={Accepted},
+    year={2016},
     abstract={
         In this paper, we describe an optimization approach to the legged locomotion problem. 
         We designed a software environment to manipulate
@@ -129,21 +129,39 @@
      }
 }
 
-@unpublished{DynabanRoboCup2016,
-     title={Dynaban, an Open-Source Alternative Firmware for Dynamixel Servo-Motors},
-     author={Fabre, Rémi and Rouxel, Quentin and Passault, Grégoire and N'Guyen, Steve and Ly, Olivier},
-     booktitle={Symposium RoboCup 2016: Robot World Cup XX},
-     year={Submitted},
-     abstract={
-         In this paper, we present an alternative open-source firmware for the Dynamixel MX-64 servo-motor. 
-         We discuss software features to fully exploit the hardware capabilities of the device. 
-         In order to enhance the default controller, a friction model and an electric model of the motor are embedded into the firmware. 
-         The parameters of the model are found using a black-box optimization algorithm. 
-         A feed-forward method is proposed to follow position, speed and torque trajectories. 
-         The approach is tested with a highly dynamic kick movement on our humanoid soccer robot Sigmaban
-         whose torque trajectories computed using a classic rigid body inverse dynamics. 
-         The comparison between the default control strategy and the proposed one shows significant 
-         improvements in terms of accuracy, delay and repeatability.
-     }
+@inproceedings{DynabanRoboCup2016,
+    title={Dynaban, an Open-Source Alternative Firmware for Dynamixel Servo-Motors},
+    author={Fabre, Rémi and Rouxel, Quentin and Passault, Grégoire and N'Guyen, Steve and Ly, Olivier},
+    booktitle={Symposium RoboCup 2016: Robot World Cup XX},
+    year={2016},
+    abstract={
+        In this paper, we present an alternative open-source firmware for the Dynamixel MX-64 servo-motor.
+        We discuss software features to fully exploit the hardware capabilities of the device.
+        In order to enhance the default controller, a friction model and an electric model of the motor are embedded into the firmware.
+        The parameters of the model are found using a black-box optimization algorithm.
+        A feed-forward method is proposed to follow position, speed and torque trajectories.
+        The approach is tested with a highly dynamic kick movement on our humanoid soccer robot Sigmaban
+        whose torque trajectories are computed using a classic rigid body inverse dynamics.
+        The comparison between the default control strategy and the proposed one shows significant
+        improvements in terms of accuracy, delay and repeatability.
+    }
+}
+
+@inproceedings{ChampionPaperRoboCup2016,
+    title={Rhoban Football Club: RoboCup Humanoid Kid-Size 2016 Champion Team Paper},
+    author={Allali, Julien and Deguillaume, Louis and Fabre, Rémi and Gondry, Loic and Hofer, Ludovic and Ly, Olivier and N'Guyen, Steve and Passault, Grégoire and Pirrone, Antoine and Rouxel, Quentin},
+    booktitle={RoboCup 2016: Robot Soccer World Cup XX},
+    year={2016},
+    organization={Springer},
+    abstract={
+        For its fifth participation to the RoboCup Kid-Size League, 
+        the Rhoban Football Club reached the first place of the competition in 2016 in Leipzig.
+        This competition aims at opposing teams of small autonomous humanoid robots in real soccer games.
+        Complex mechanics, electronics and software systems are needed to be implemented.
+        In this paper, we summarize and describe some distinctive parts of our architecture.
+        Going from our foot pressure sensors, our open-source alternative Dynamixel firmware, 
+        the use of kinematics models, the odometry and camera calibration to our perception system
+        as well as simple but effective team play strategies.
+    }
 }
 

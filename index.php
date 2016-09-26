@@ -63,6 +63,7 @@ $bibtex = parseBibtex();
         <div class="col-md-3">
             <a href="link.php?l=http://www.labri.fr"><img src="media/labri.jpg" alt="labri" width="300" /></a>
             <a href="link.php?l=http://www.u-bordeaux.com"><img src="media/univ.jpg" alt="university of bordeaux" width="300" /></a>
+            <a href="link.php?l=http://www.bordeaux-inp.fr"><img src="media/inp.jpg" alt="institut polytechnique de bordeaux" width="300" /></a>
             <a href="link.php?l=http://rhoban.com/en"><img src="media/rhoban.png" alt="rhoban" width="300" /></a>
         </div>
     </div>
@@ -278,7 +279,7 @@ $bibtex = parseBibtex();
                 </a>
                 <br/>
                 Open-Source DIY parametric quadruped robot either 3d printed or laser cut conceived by Grégoire Passault.
-                Low cost platform used for educational purposes. <a href="link.php?l=http://metabot.cc/">Metabot Website</a>
+                Low cost platform used for educational purposes. <a href="link.php?l=http://metabot.cc">Metabot Website</a>
             </li>
         </ul>
     <div style="width: 80%; display: block; margin: 60px auto; background: #EEE; height: 2px;"></div>
@@ -286,10 +287,24 @@ $bibtex = parseBibtex();
     <?php
         $videos = array();
         array_push($videos, array(
+            'img' => 'videoPressureRecovery.jpg',
+            'alt' => 'robot humanoid foot pressure sensors push recovery',
+            'url' => 'https://youtu.be/avJI_cBuMm0',
+            'text' => 'Lateral walk push recovery stabilization using foot pressure sensors.',
+            'year' => '2016',
+        ));
+        array_push($videos, array(
+            'img' => 'videoRecapRoboCup2016.jpg',
+            'alt' => 'robocup 2016 recap of the competition',
+            'url' => 'https://youtu.be/lF2gIbs-gq8',
+            'text' => 'RoboCup 2016 Leipzig (Germany) recap of the competition.',
+            'year' => '2016',
+        ));
+        array_push($videos, array(
             'img' => 'videoRoboCup2016.jpg',
             'alt' => 'robocup qualification 2016 rhoban',
             'url' => 'https://youtu.be/VItIaOX8oIU',
-            'text' => 'RoboCup 2016 Leipzig (Germany) Rhoban Football Club qualificatin video.',
+            'text' => 'RoboCup 2016 Leipzig (Germany) Rhoban Football Club qualification video.',
             'year' => '2016',
         ));
         array_push($videos, array(
