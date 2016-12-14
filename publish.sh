@@ -2,13 +2,14 @@
 
 URL='https://webdav.labri.fr/perso/qrouxel/'
 
-FILES=`
-    find . -type f -name "*" -not -path "*git*" -not -name "publish.sh" -not -name "*.swp" -not -name "leph_logs.txt"
-`
+FILES=`find . -type f -iname "*" -and -not -ipath "*.git*" -and -not -iname "*.sh" -and -not -iname "*leph_logs.txt" -not -iname "*.swp"`
+
+read -s -p "Enter Password: " PWD
+echo ""
 
 for file in $FILES; do
     echo "Pushing $URL$file";
-    curl -u qrouxel -T $file $URL$file
+    curl -u qrouxel:$PWD -T $file $URL$file
 done;
 
 #Delete file
