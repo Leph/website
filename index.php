@@ -52,13 +52,17 @@ $bibtex = parseBibtex();
             <a href="link.php?l=http://www.labri.fr/perso/gimbert">Hugo Gimbert</a>
             <br/> 
             <br/> 
+            ATER (Temporary Lecturer and Research Assistant) at 
+            <a href="link.php?l=http://www.bordeaux-inp.fr">Bordeaux INP</a> (engineering school).
+            <br/> 
+            <br/> 
             <a href="link.php?l=http://www.labri.fr">LaBRI</a> computer science laboratory at 
             <a href="link.php?l=http://www.u-bordeaux.com">University of Bordeaux</a><br/>
             LaBRI, batiment A30, 351, cours de la Libération, 33405 Talence<br/>
             <br/>
             Member of Team <a href="link.php?l=http://rhoban.com/en">Rhoban</a><br/>
             <br/>
-            <em>Last update: 09/2016</em>
+            <em>Last update: 12/2016</em>
         </div>
         <div class="col-md-3">
             <a href="link.php?l=http://www.labri.fr"><img src="media/labri.jpg" alt="labri" width="300" /></a>
@@ -97,7 +101,7 @@ $bibtex = parseBibtex();
         <ul>
             <li>Learning of the odometry on Humanoid robot</li>
             <li>Off-line generation of dynamic open loop motion</li>
-            <li>Learning of the actual dynamic model of small Humanoid robots</li>
+            <li>Learning and simulation of the actual dynamic model of small Humanoid robots</li>
             <li>Generation of open loop reactive motions</li>
         </ul>
     <h2>RoboCup</h2>
@@ -110,9 +114,10 @@ $bibtex = parseBibtex();
         The Rhoban Team is participating each year since 2011 to the RoboCup competition
         in the Humanoid Kid-Size league.
         I have participated with the Rhoban Football Club to the RoboCup 2013 Einhoven (Netherland),
-        2014 Joao Pessoa (Brazil) and 2016 Hefei (China).
-        This last years, the team has kept improving and has reached the <strong>quarters final in 2014</strong> and
-        the <strong>third place in 2015</strong>.
+        2014 Joao Pessoa (Brazil), 2016 Hefei (China) and 2017 Leipzig (Germany).
+        This last years, the team has kept improving and reached the <strong>quarters final in 2014</strong>,
+        the <strong>third place in 2015</strong> and <strong>won the Kid-Size competition in 2016</strong> 
+        in Humanoid League.
     <div style="width: 80%; display: block; margin: 60px auto; background: #EEE; height: 2px;"></div>
     <h2 id="publications"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Publications</h2>
         <table class="table table-bordered"> 
@@ -279,13 +284,20 @@ $bibtex = parseBibtex();
                 </a>
                 <br/>
                 Open-Source DIY parametric quadruped robot either 3d printed or laser cut conceived by Grégoire Passault.
-                Low cost platform used for educational purposes. <a href="link.php?l=http://metabot.cc">Metabot Website</a>
+                Low cost platform used for educational purposes. <a href="link.php?l=http://metabot.cc">Metabot Website</a>.
             </li>
         </ul>
     <div style="width: 80%; display: block; margin: 60px auto; background: #EEE; height: 2px;"></div>
     <h2 id="videos"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Videos</h2>
     <?php
         $videos = array();
+        array_push($videos, array(
+            'img' => 'videoRoboCup2017.jpg',
+            'alt' => 'robocup qualification 2017 rhoban',
+            'url' => 'https://youtu.be/jQvx23yJmvM',
+            'text' => 'Rhoban Football Club Qualification Video for Robocup 2017 (Nagoya).',
+            'year' => '2017',
+        ));
         array_push($videos, array(
             'img' => 'videoPressureRecovery.jpg',
             'alt' => 'robot humanoid foot pressure sensors push recovery',
