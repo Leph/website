@@ -292,6 +292,13 @@ $bibtex = parseBibtex();
     <?php
         $videos = array();
         array_push($videos, array(
+            'img' => 'videoApproachICAPS2017.jpg',
+            'alt' => 'ICAPS 2017 efficient walk control policies humanoid robot',
+            'url' => 'https://youtu.be/PNA-rpNKfsY',
+            'text' => 'An Operational Method Toward Efficient Walk Control Policies for Humanoid Robots. Video contribution for ICAPS 2017.',
+            'year' => '2017',
+        ));
+        array_push($videos, array(
             'img' => 'videoRoboCup2017.jpg',
             'alt' => 'robocup qualification 2017 rhoban',
             'url' => 'https://youtu.be/jQvx23yJmvM',
