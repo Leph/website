@@ -43,6 +43,10 @@ $bibtex = parseBibtex();
                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
                 <a href="paper.php?f=CV_QuentinRouxel_fr.pdf">French Curriculum Vitae</a>
             </strong><br/>
+            <strong>
+                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                <a href="paper.php?f=CV_QuentinRouxel_en.pdf">English Curriculum Vitae</a>
+            </strong><br/>
         </div>
         <div class="col-md-4">
             <h2>Quentin Rouxel</h2>
