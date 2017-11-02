@@ -66,7 +66,7 @@ $bibtex = parseBibtex();
             <br/>
             Member of Team <a href="link.php?l=http://rhoban.com/en">Rhoban</a><br/>
             <br/>
-            <em>Last update: 12/2016</em>
+            <em>Last update: 10/2017</em>
         </div>
         <div class="col-md-3">
             <a href="link.php?l=http://www.labri.fr"><img src="media/labri.jpg" alt="labri" width="300" /></a>
@@ -79,6 +79,8 @@ $bibtex = parseBibtex();
         <ul class="nav nav-pills">
             <li role="presentation"><a href="#research">
                 <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Research</a></li>
+            <li role="presentation"><a href="#robocup">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> RoboCup</a></li>
             <li role="presentation"><a href="#publications">
                 <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Publications</a></li>
             <li role="presentation"><a href="#software">
@@ -96,32 +98,68 @@ $bibtex = parseBibtex();
         The first one is related to the perception of the robot's own state and environment. 
         The second one to the <em>motion intelligence</em> needed to
         improvise, control and stabilize complex and highly dynamic movements
-        as the game continuously evolve.
+        as the game continuously evolves.
         My work mostly belong to this second point, especially focused on small <em>low cost</em> humanoid robots 
-        where the actual dynamic behaviour is hight dissimilar from their rigid body theoretical models.
+        where the actual dynamic behaviour is hight dissimilar from their rigid body theoretical models --
+        due to to their mechanical, electrical, and motor control imperfections.
         <br/>
         <br/>
         My past and current activities sum up as follows:
         <ul>
-            <li>Learning of the odometry on Humanoid robot</li>
-            <li>Off-line generation of dynamic open loop motion</li>
-            <li>Learning and simulation of the actual dynamic model of small Humanoid robots</li>
-            <li>Generation of open loop reactive motions</li>
+            <li>Learning and correcting the odometry (proprioceptive and predictive) on small humanoid robots</li>
+            <li>Correcting the robot's camera model to improve the accuracy of object distance evaluations</li>
+            <li>Off-line generation of open loop kick motions through inverse dynamics optimization</li>
+            <li>Implementation of a dynamic simulator in order to capture the flaws of our humanoid robots (generalized coordinates, ground contacts)</li>
+            <li>Overcome robot's flaws by optimizing motions (feedforward) within the simulator</li>
         </ul>
-    <h2>RoboCup</h2>
+    <div style="width: 80%; display: block; margin: 60px auto; background: #EEE; height: 2px;"></div>
+    <h2 id="robocup"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> RoboCup</h2>
         The RoboCup is an international Robotics competition (about 3000 participants) running several
-        leagues. The Humanoid Kid-Size league is a football tournament where two teams of small fully
-        autonomous humanoid robots (40-90cm) are playing against each other's. The declared goal
-        is to slowly eventually reach the level of professional human players.
+        leagues. The Humanoid Kid-Size league is a soccer tournament where two teams of small fully
+        autonomous humanoid robots (40-90cm) are playing against each other's. 
+        Eventually, the ambition is to slowly eventually reach the level of professional human players.
         <br/>
         <br/>
         The Rhoban Team is participating each year since 2011 to the RoboCup competition
         in the Humanoid Kid-Size league.
         I have participated with the Rhoban Football Club to the RoboCup 2013 Einhoven (Netherland),
-        2014 Joao Pessoa (Brazil), 2016 Hefei (China) and 2017 Leipzig (Germany).
-        This last years, the team has kept improving and reached the <strong>quarters final in 2014</strong>,
-        the <strong>third place in 2015</strong> and <strong>won the Kid-Size competition in 2016</strong> 
-        in Humanoid League.
+        2014 João Pessoa (Brazil), 2015 Hefei (China) and 2016 Leipzig (Germany).
+        These last years, the team has kept improving :
+        <ul>
+            <li><strong>2011 Istanbul (Turkey) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                Very first participation of the team at RoboCup competition
+                under the name <em>SigmaBan Football Club</em>.
+            </p></li>
+            <li><strong>2013 Eindhoven (Netherlands) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                Second participation under current name <em>Rhoban Football Club</em>.
+                For the first time, the team was able to submit three robust humanoid robots 
+                without major hardware problem. First goals was scored.
+            </p></li>
+            <li><strong>2014 João Pessoa (Brazil) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                We took a big step forward by reaching the <strong>quarter finals</strong>
+                and working out a robust walk engine.
+            </p></li>
+            <li><strong>2015 Heifei (China) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                We coped well with the new rules : artificial grass and colorless field.
+                We reached the semi-finals and took the <strong>third place</strong> of Kid-Size league.
+            </p></li>
+            <li><strong>2016 Leipzig (Germany) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                We succeed to hit the <strong>first place</strong> of the Kid-Size league
+                thanks to our versatile vision pipeline, an improved localization module
+                through accurate odometry learning and the very beginning of high level team play
+                strategy.
+            </p></li>
+            <li><strong>2017 Nagoya (Japan) :</strong>
+            <p style="padding-left: 20px; width: 80%;">
+                For the second time, Rhoban <strong>won the first place of the Humanoid Kid-Size</strong> competition.
+                The team also won <strong>the Best Humanoid Robot Award</strong>.
+            </p></li>
+        </ul>
     <div style="width: 80%; display: block; margin: 60px auto; background: #EEE; height: 2px;"></div>
     <h2 id="publications"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Publications</h2>
         <table class="table table-bordered"> 
@@ -295,6 +333,20 @@ $bibtex = parseBibtex();
     <h2 id="videos"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Videos</h2>
     <?php
         $videos = array();
+        array_push($videos, array(
+            'img' => 'videoRecapRoboCup2017.jpg',
+            'alt' => 'robocup 2017 recap of the competition',
+            'url' => 'https://youtu.be/_DasbaxU1Jg',
+            'text' => 'RoboCup 2017 Nagoya (Japan) recap of the competition.',
+            'year' => '2017',
+        ));
+        array_push($videos, array(
+            'img' => 'videoFinalRoboCup2017.jpg',
+            'alt' => 'robocup 2017 final Zju Dancer (China) vs Rhoban',
+            'url' => 'https://youtu.be/UStWRR1r4aU',
+            'text' => 'RoboCup 2017 Nagoya (Japan) final Zju Dancer (China) vs Rhoban.',
+            'year' => '2017',
+        ));
         array_push($videos, array(
             'img' => 'videoApproachICAPS2017.jpg',
             'alt' => 'ICAPS 2017 efficient walk control policies humanoid robot',
