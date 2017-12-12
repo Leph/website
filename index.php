@@ -56,8 +56,8 @@ $bibtex = parseBibtex();
             <a href="link.php?l=http://www.labri.fr/perso/gimbert">Hugo Gimbert</a>
             <br/> 
             <br/> 
-            ATER (Temporary Lecturer and Research Assistant) at 
-            <a href="link.php?l=http://www.bordeaux-inp.fr">Bordeaux INP</a> (engineering school).
+            Temporary Lecturer and Research Assistant at 
+            <a href="link.php?l=http://www.bordeaux-inp.fr">Bordeaux INP</a> (French engineering school).
             <br/> 
             <br/> 
             <a href="link.php?l=http://www.labri.fr">LaBRI</a> computer science laboratory at 
@@ -66,7 +66,7 @@ $bibtex = parseBibtex();
             <br/>
             Member of Team <a href="link.php?l=http://rhoban.com/en">Rhoban</a><br/>
             <br/>
-            <em>Last update: 10/2017</em>
+            <em>Last update: 12/2017</em>
         </div>
         <div class="col-md-3">
             <a href="link.php?l=http://www.labri.fr"><img src="media/labri.jpg" alt="labri" width="300" /></a>
@@ -178,7 +178,7 @@ $bibtex = parseBibtex();
                         echo '<td>'.highlightName($bib['author']).'</td>';
                         echo '<td>'.$bib['title'];
                         if ($bib['type'] !== null) {
-                            echo ' ('.$bib['type'].')';
+                            echo ' <strong>('.$bib['type'].')</strong>';
                         }
                         echo '<br/>';
                         echo '<button class="btn btn-primary" type="button" data-toggle="collapse" ';
@@ -219,12 +219,12 @@ $bibtex = parseBibtex();
             <?php
                 $index = 0;
                 foreach ($bibtex as $bib) {
-                    if ($bib['class'] === 'misc') {
+                    if ($bib['class'] === 'misc' || $bib['class'] === 'phdthesis') {
                         echo '<tr>';
                         echo '<td>'.highlightName($bib['author']).'</td>';
                         echo '<td>'.$bib['title'];
                         if ($bib['type'] !== null) {
-                            echo ' ('.$bib['type'].')';
+                            echo ' <strong>('.$bib['type'].')</strong>';
                         }
                         echo '<br/>';
                         echo '<button class="btn btn-primary" type="button" data-toggle="collapse" ';
